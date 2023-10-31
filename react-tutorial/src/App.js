@@ -11,11 +11,6 @@ function App() {
       <Navbar />
       <div className="content">
         <Home />
-
-
-
-
-
         {/* <p>{title}</p>
         <p>Liked {likes} time(s).</p>
 
