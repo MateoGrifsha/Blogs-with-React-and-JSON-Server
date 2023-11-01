@@ -1,26 +1,27 @@
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom/cjs/react-router-dom.min';
+import CreateBlog from './components/CreateBlog';
 
 function App() {
-  const title = 'Welcome to the blog'
-  const likes = 0;
-  const person = {name : 'miles', age: 15};
-  const link = 'http://www.google.com';
   return (
-    <div className="App">
-      <Navbar />
-      <div className="content">
-        <Home />
-        {/* <p>{title}</p>
-        <p>Liked {likes} time(s).</p>
-
-        <p>{person.name} is {person.age}</p>
-        <p>{['mateo', 12, 'g', 'r']}</p>
-        <p>{Math.floor(Math.random() * 10) + 1}</p>
-
-        <a href={link}>Google Site</a> */}
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route exact path='/'>
+              <Home />
+            </Route>
+            
+            <Route exact path='/create'>
+              <CreateBlog />
+            </Route>
+            
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
