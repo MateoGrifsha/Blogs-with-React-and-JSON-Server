@@ -40,17 +40,19 @@
   padding: 10px 16px;
   margin: 20px 0;
   box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
-  position: relative;
 }
 .blog-preview:hover {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
+}
+.blog-preview a {
+  text-decoration: none;
 }
 .blog-preview h2 {
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 8px;
 }
-.blog-preview button{
+.blog-details button{
    font-size: 14px;
    background-color: #f1356d;
    padding: 5px 4px;
@@ -58,11 +60,58 @@
    color: white;
    outline: none;
    border: none;
-   position: absolute;
-   top: 10px;
-   right: 10px;
    cursor: pointer;
 }
-.blog-preview button:hover{
+.blog-details button:hover{
   background-color: #cf2d5e;
+}
+/*blog template*/
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+.blog-details button{
+  background-color: #f1356d;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  resize: vertical;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
 }
